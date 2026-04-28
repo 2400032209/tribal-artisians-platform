@@ -4,7 +4,7 @@ import './LandingPage.css';
 
 const LandingPage = () => {
   const navigate = useNavigate();
-  const [userType, setUserType] = useState('');
+  const [, setUserType] = useState("");
 
   const handleUserTypeSelect = (type) => {
     setUserType(type);
