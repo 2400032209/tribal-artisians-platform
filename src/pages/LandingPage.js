@@ -8,7 +8,6 @@ const LandingPage = () => {
 
   const handleUserTypeSelect = (type) => {
     setUserType(type);
-    // Navigate to login with user type
     navigate('/login', { state: { userType: type } });
   };
 
