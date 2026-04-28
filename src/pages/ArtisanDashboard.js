@@ -5,7 +5,7 @@ import './ArtisanDashboard.css';
 const ArtisanDashboard = () => {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState('products');
-  const [showAddProduct, setShowAddProduct] = useState(false);
+  const [, setShowAddProduct] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const [products, setProducts] = useState([
     {
