@@ -124,7 +124,7 @@ const Checkout = () => {
         
         if (parseInt(month) < 1 || parseInt(month) > 12) {
           newErrors.expiry = 'Invalid month';
-        } else if (parseInt(year) < currentYear || (parseInt(year) === currentYear && parseInt(month) < currentMonth)) {
+        } else if (parseInt(year) < currentYear) || (parseInt(year) === currentYear && parseInt(month) < currentMonth) {
           newErrors.expiry = 'Card has expired';
         }
       }
