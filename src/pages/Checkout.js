@@ -123,10 +123,10 @@ const Checkout = () => {
         const currentMonth = new Date().getMonth() + 1;
         
         if (parseInt(month) < 1 || parseInt(month) > 12) {
-          newErrors.expiry = 'Invalid month';
-        } else if (parseInt(year) < currentYear) || (parseInt(year) === currentYear && parseInt(month) < currentMonth) {
-          newErrors.expiry = 'Card has expired';
-        }
+  newErrors.expiry = 'Invalid month';
+} else if ((parseInt(year) < currentYear) || (parseInt(year) === currentYear && parseInt(month) < currentMonth)) {
+  newErrors.expiry = 'Card has expired';
+}
       }
 
       if (!formData.cvv) {
